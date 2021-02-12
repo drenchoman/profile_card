@@ -4,42 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Profile card component</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/d9929ab48a.js"></script>
+
+
 </head>
 
 <body>
   <div class="container">
     <div class="topHalf">
       <div class="imageDiv">
-        <img src="images/image-victor.jpg" alt="Profile Picture">
+        <img class="profilePic" src="images/image-victor.jpg" alt="Profile Picture">
       </div>
     </div>
-    <div class="bottomHalf">
+    <div class="profile">
       <div class="profileInfo">
         <span class="name">Victor Crest</span>
         <span class="age">26</span>
+        <span class="city">London</span>
       </div>
-      <div class="city">
-        <span>London</span>
 
-      </div>
+    </div>
       <hr>
+    <div class="socialInfo">
+
+
       <div class="socialBar">
-        <div class="social">
+        <div class="social left">
+            <span class="socialHeaders">Followers</span>
           <span class="num">80K</span>
-          <span class="type">Followers</span>
+          <em><i class="fas fa-users socialIcon"></i></em>
+
+          <img src="" alt="">
+
         </div>
-        <div class="social">
-          <span class="num">803K</span>
-          <span class="type">Likes</span>
+        <div class="social middle">
+                    <span class="socialHeaders">Likes</span>
+              <span class="num">803K</span>
+              <em><i class="far fa-thumbs-up socialIcon"></i></em>
+
+
+
         </div>
-        <div class="social">
+        <div class="social right">
+            <span class="socialHeaders">Photos</span>
           <span class="num">1.4k</span>
-          <span class="type">Photos</span>
+          <em><i class="fas fa-image socialIcon"></i></em>
+
 
         </div>
 
@@ -57,5 +74,7 @@
     Coded by <a href="https://www.linkedin.com/in/oscar-harron-87228a164/">Oscar Harron</a>.
   </div>
 </body>
+<script src="app.js"></script>
+
 
 </html>
